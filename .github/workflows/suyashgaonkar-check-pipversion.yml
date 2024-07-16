@@ -18,5 +18,8 @@ jobs:
         with:
           python-version: '3.12'
       
+      - name: install pip version 24.0
+        run: python -m pip install --upgrade pip==24.0
+      
       - name: check pip version
         run: python3 -m pip --version
